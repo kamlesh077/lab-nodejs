@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part-3</title>
+</head>
+<body>
+    <!-- normal html -->
+    <h1>Hello bacho - Pwskills</h1>
+    <p id="js"></p>
+    
+    <!-- for double click add ondblclick -->
+    <button onclick="hey()" id="jss">Submit</button>
+
+    <!-- JS//event listener -->
+    <script>
+        // applied event listener to whole web page
+        document.addEventListener("dblclick",hello);     // click, dblclick, mouseenter,etc
+        function hello() {
+            document.getElementById("js").innerText = "Namaste Bacho";
+        }
+        function hey() {
+            document.getElementById("jss").innerText = "Namaste GURU";
+            document.getElementById("jss").style.color = "red";
+            document.getElementById("jss").style.backgroundColor = "yellow";
+            document.getElementById("jss").style.padding = "16px";
+            document.getElementById("jss").style.border = "2px solid black";
+
+        }
+    </script>
+</body>
+</html>
